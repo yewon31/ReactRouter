@@ -51,7 +51,7 @@ function App() {
     }
 
     if(sock == null) {
-      const socket = new SockJS(`http://172.30.1.73:8181/api/chat?userId=${userId}&room=1`);
+      const socket = new SockJS(`http://localhost:8181/api/chat?userId=${userId}&room=1`);
       //연결 성립 호출됨
       socket.onopen = () => {
         console.log("연결 수립")
